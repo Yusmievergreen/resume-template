@@ -1,0 +1,157 @@
+<div class="d-flex">
+  <div class="layout-leftbar">
+    <button class="icon-nav mb-auto mr-3" pButton type="button" (click)="visibleSidebar1 = true">
+      <i class="pi pi-bars"></i>
+    </button>
+  </div>
+  <p-sidebar [(visible)]="visibleSidebar1" styleClass="d-flex flex-column" [baseZIndex]="10000">
+    <nav class="nav flex-column">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#service">Service</a>
+      <a class="nav-link" href="#resume">Resume</a>
+      <a class="nav-link" href="#get-in-touch">Get in touch</a>
+    </nav>
+    <div class="sidebar-footer d-flex">
+      <div class="d-flex p-4 row">
+        <a class="col" href="https://twitter.com/FerminYusmi"
+          ><fa-icon [icon]="faTwitter" size="2x"></fa-icon
+        ></a>
+        <a class="col" href="https://github.com/Yusmievergreen"
+          ><fa-icon [icon]="faGithub" size="2x"></fa-icon
+        ></a>
+        <a class="col" href="https://www.linkedin.com/in/yusmin-fermin-4769241a3/"
+          ><fa-icon [icon]="faLinkedin" size="2x"></fa-icon
+        ></a>
+        <a class="col" href="https://www.instagram.com/yusmi.evergreen"
+          ><fa-icon [icon]="faInstagram" size="2x"></fa-icon
+        ></a>
+      </div>
+    </div>
+  </p-sidebar>
+  <div class="main-content row no-gutters">
+    <section class="col introduction">
+      <p class="p-4 summary">Hello. I'm</p>
+      <h1 class="p-5">Tabatha Moreno</h1>
+      <p class="p-4 summary text-justify">
+        A full stack all around designer that may or may not include a guide for specific creative potential
+        methods who framing and evaluating moves.
+      </p>
+      <div class="d-flex">
+        <div class="d-flex p-5 row m-auto">
+          <a class="col" href="https://twitter.com/FerminYusmi"
+            ><fa-icon [icon]="faTwitter" size="2x" class="social-icon"></fa-icon
+          ></a>
+          <a class="col" href="#"><fa-icon [icon]="faGithub" size="2x"></fa-icon></a>
+          <a class="col" href="https://www.linkedin.com/in/yusmin-fermin-4769241a3/"
+            ><fa-icon [icon]="faLinkedin" size="2x"></fa-icon
+          ></a>
+          <a class="col" href="https://www.instagram.com/yusmi.evergreen"
+            ><fa-icon [icon]="faInstagram" size="2x"></fa-icon
+          ></a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="col col-5 p-0">
+    <img class="main-portrait" src="/assets/placeholderimg.jpg" alt="" />
+  </div>
+</div>
+<div class="row no-gutters d-flex text-center p-5 ml-5">
+  <div class="col col-5 develop-card p-5 mx-5">
+    <fa-icon [icon]="faCode" size="5x"></fa-icon>
+    <h2 class="mt-3">Develop</h2>
+    <p>A full stack allaround designer that may or may not include a guide for specific creative people</p>
+  </div>
+  <div class="col col-5 develop-card p-5">
+    <fa-icon [icon]="faPalette" size="5x"></fa-icon>
+    <h2 class="mt-3">Design</h2>
+    <p>
+      orem ipsum dolor sit amet consectetu adipiscing elit viverra tristique placerat Faucibus sed tristique
+    </p>
+  </div>
+</div>
+<section id="service" class="service col col-9 m-auto p-4">
+  <h2 class="mb-3">Service</h2>
+  <p>Lorem ipsum dolor sit amet consectetu adipiscing elit viverra tristique placerat</p>
+  <p class="text-justify">
+    Lorem ipsum dolor sit amet consectetu adipiscing elit viverra tristique placerat Faucibus sed tristique
+    fames sed aliquet ultricies eget viverra arcu. Vitae faucibus diam consequat aecenas. Turpis metus sit
+    diam purus leo in varius ac quam. Nunc amet tristique set volutpat estars adipiscing vulputate est
+    phasellus. Volutpat faucibus per praesent aced nuncare voltare per settera lorem ipsum dolor.
+  </p>
+  <button type="button" class="btn btn-outline-light p-3">Download CV</button>
+</section>
+<section id="resume" class="resume col col-9 m-auto p-4">
+  <h2 class="my-3">Experience</h2>
+  <div class="text-justify p-0">
+    <span>2018 - Present </span>
+    <h5>Jr. Frontend Developer</h5>
+    <p>
+      Monitored technical aspects of the front-end delivery for projects. Lorem ipsum dolor sit amet
+      consectetu adipiscing elit viverra tristique placerat Faucibus sed tristique fames sed aliquet ultricies
+      eget viverra arcu. Vitae faucibus diam consequat aecenas. Turpis metus sit
+    </p>
+  </div>
+</section>
+<section class="skills col col-9 m-auto p-4">
+  <h2>Skills</h2>
+  <div class="row">
+    <div class="col col-3">
+      <p-chart type="doughnut" [data]="data" [options]="options" width="530" height="230"></p-chart>
+      <span class="ml-5 text-uppercase">html</span>
+    </div>
+    <div class="col col-3">
+      <p-chart type="doughnut" [data]="data" [options]="options" width="530" height="230"></p-chart>
+      <span class="ml-5 text-uppercase">css</span>
+    </div>
+    <div class="col col-3">
+      <p-chart type="doughnut" [data]="data" [options]="options" width="530" height="230"></p-chart>
+      <span class="ml-4 text-uppercase">javascript</span>
+    </div>
+    <div class="col col-3">
+      <p-chart type="doughnut" [data]="data" [options]="options" width="530" height="230"></p-chart>
+      <span class="ml-5 text-uppercase">angular</span>
+    </div>
+  </div>
+  <div class="m-3 d-flex">
+    <p-progressBar [value]="70"></p-progressBar>
+    <span class="ml-3">70%</span>
+  </div>
+  <span class="ml-3 mb-3 text-uppercase">Bootstrap</span>
+  <div class="m-3 d-flex">
+    <p-progressBar [value]="60"></p-progressBar>
+    <span class="ml-3 text-uppercase">60%</span>
+  </div>
+  <span class="ml-3 mb-3 text-uppercase">Sketch</span>
+  <div class="m-3 d-flex">
+    <p-progressBar [value]="50"></p-progressBar>
+    <span class="ml-3">50%</span>
+  </div>
+  <span class="ml-3 mb-3 text-uppercase">Photoshop</span>
+</section>
+<section id="get-in-touch" class="col-9 p-4 m-auto">
+  <h2>Get in touch</h2>
+</section>
+<div class="mb-5">
+  <form class="col-8 p-5 m-auto">
+    <div class="form-group p-4">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" />
+    </div>
+    <div class="form-group p-4">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" />
+    </div>
+    <div class="form-group p-4">
+      <label for="subject">Subject</label>
+      <input type="text" class="form-control" id="subject" />
+    </div>
+    <div class="form-group p-4">
+      <label for="message">Message</label>
+      <textarea class="form-control" id="message" rows="3"></textarea>
+    </div>
+    <div class="p-3">
+      <button type="submit" class="btn btn-outline-primary btn-block p-3 text-uppercase">Send</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,71 @@
+h1 {
+  font-family: 'poppins';
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #7b84db;
+}
+.main-content {
+  margin-left: 72px;
+}
+.introduction {
+  background-color: #e0e3ef;
+}
+.main-portrait {
+  height: 580px;
+  width: 420px;
+  padding: 0;
+}
+
+.summary {
+  color: #0f4c81 !important;
+}
+
+.icon-nav {
+  background: transparent;
+  border: none;
+}
+
+.nav-link {
+  margin-bottom: 2rem;
+  font-family: 'poppins';
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  &:hover {
+    color: #7b84db;
+  }
+}
+.pi-bars {
+  font-size: 3.25rem;
+  color: #f2f2f2;
+  &:hover {
+    color: #7b84db;
+  }
+}
+.develop-card {
+  background: lighten(#0f4c81, 10%);
+}
+.btn-outline-light {
+  border-radius: 35px;
+  border-width: 3px;
+}
+
+form {
+  background-color: #e0e3ef;
+}
+input,
+textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #0f4c81;
+  background-color: transparent;
+  border-radius: 0;
+}
+label {
+  color: #0f4c81;
+}
+.btn-block {
+  border: 3px solid #0f4c81;
+  color: #0f4c81;
+  letter-spacing: 0.5rem;
+}

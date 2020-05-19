@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #0f4c81;
+  font-family: 'poppins';
+}
+.layout-leftbar {
+  background-color: lighten(#0f4c81, 10%);
+  position: fixed;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  z-index: 9997;
+}
+.ui-sidebar {
+  background-color: lighten(#0f4c81, 10%) !important;
+  border: none !important;
+}
+.ng-fa-icon {
+  color: #7b84db;
+  &:hover {
+    color: #0f4c81;
+  }
+}
+p {
+  font-weight: 300;
+  color: #f2f2f2;
+}
+h2 {
+  color: #f2f2f2;
+}
+.ui-progressbar {
+  background-color: lighten(#0f4c81, 10%) !important;
+  width: 600px !important;
+  height: 28px !important;
+}
+
+.ui-progressbar-value {
+  background: #7b84db !important;
+}
+.ui-progressbar-label {
+  display: none !important;
+}
+span {
+  font-size: 350;
+  color: #e0e3ef;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(assets/fonts/Poppins-ExtraBold.otf) format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: poppins;
+  font-weight: 200;
+  src: url(assets/fonts/Poppins-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: poppins;
+  src: url(assets/fonts/Poppins-SemiBold.otf) format('opentype');
+}
