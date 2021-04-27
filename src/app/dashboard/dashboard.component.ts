@@ -14,30 +14,8 @@ export class DashboardComponent implements OnInit {
   faInstagram = faInstagram
   faCode = faCode
   faPalette = faPalette
-  data: any
-  value: [50, 60]
-  options: any = {
-    title: {
-      display: true
-    },
-    legend: {
-      display: false
-    },
-    tooltip: {
-      enable: false
-    }
-  }
-  constructor() {
-    this.data = {
-      datasets: [
-        {
-          data: [100, 25],
-          backgroundColor: ['#7b84db', '#1362a6'],
-          borderColor: ['#7b84db', '#1362a6']
-        }
-      ]
-    }
-  }
+
+  constructor() {}
 
   ngOnInit() {}
 }
